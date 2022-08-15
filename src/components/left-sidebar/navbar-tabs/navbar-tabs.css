@@ -1,0 +1,61 @@
+.navbar_container {
+	padding: 50px 25px 30px 20px;
+}
+
+.tab_container-btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+}
+
+.tab_container-btn.active {
+	background: #232123;
+}
+
+.tab_icon {
+	filter: invert(48%) sepia(5%) saturate(86%) hue-rotate(251deg) brightness(96%)
+		contrast(85%);
+}
+
+.tab_icon.active {
+	filter: brightness(0) invert(1);
+}
+
+.tab_name-container {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.tab_name {
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.tab_name.active {
+	color: #e9e9e9;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.tab_name.inactive {
+	color: #7a797a;
+}
+
+.tab_arrow-container {
+	display: flex;
+	align-items: center;
+}
+
+.tab_name-logout {
+	font-size: 14px;
+	font-weight: 500;
+	color: #e0775d;
+}

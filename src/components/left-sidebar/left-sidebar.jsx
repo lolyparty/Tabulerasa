@@ -1,4 +1,5 @@
 import User from './user/user';
+import NavbarTab from './navbar-tabs/navbar-tabs';
 import './left-sidebar.css';
 import profilePicture from '../../assets/Images/profile-pic.png';
 
@@ -10,6 +11,7 @@ const LeftSidebar = () => {
 				role="Superadmin"
 				profilePicSrc={profilePicture}
 			/>
+			<NavbarTab />
 		</div>
 	);
 };

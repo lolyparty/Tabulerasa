@@ -42,7 +42,6 @@
 .app_company-percentage,
 .app_users-percentage {
 	display: flex;
-	gap: 5px;
 	align-items: center;
 }
 

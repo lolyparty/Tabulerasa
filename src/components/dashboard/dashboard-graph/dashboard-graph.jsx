@@ -59,15 +59,23 @@ const DashboardGraph = () => {
 						datasets: [
 							{
 								label: '',
-								data: [0, 20, 50, 43, 40, 55, 67, 68, 73, 74],
-								fill: true,
+								data: [0, 30, 50, 43, 40, 55, 67, 68, 73, 74],
+								fill: 'start',
+								fillColor: '#fff',
 								borderColor: ['#FFCA00'],
-								backgroundColor: [
-									'rgba(255, 244, 204, 1)',
-									'rgba(255, 244, 204, 0)',
-									'#fff',
-								],
-								tension: 0.35,
+								backgroundColor: (context) => {
+									const ctx = context.chart.ctx;
+									const gradient = ctx.createLinearGradient(0, 0, 0, 500);
+									gradient.addColorStop(0, 'rgba(255, 244, 204, 1)');
+									gradient.addColorStop(1, 'rgba(255, 244, 204, 0)');
+									return gradient;
+								},
+								// backgroundColor: [
+								// 	'rgba(255, 244, 204, 1)',
+								// 	'rgba(255, 244, 204, 0)',
+								// 	'#fff',
+								// ],
+								tension: 0.25,
 								borderWidth: 2,
 								pointBackgroundColor: '#FFCA00',
 							},

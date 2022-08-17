@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import dateIcon from '../../assets/Icons/calendar-blank.svg';
+import DashboardCard from './dashboard-cards/dashboard-card';
 import './dashboard.css';
+import companiesIcon from '../../assets/Icons/buildings.svg';
+import usersIcon from '../../assets/Icons/users-three.svg';
 
 const Dashboard = () => {
 	const [activeTab, setActiveTab] = useState('overview');
@@ -51,6 +54,30 @@ const Dashboard = () => {
 				>
 					Users
 				</button>
+			</div>
+			<div className="dashboard_overview-container">
+				<div className="company_graph-container">
+					<div className="company_users-cards-container">
+						<DashboardCard
+							name="Companies"
+							percent="8"
+							amount="76"
+							icon={companiesIcon}
+							profit={false}
+							className="ok"
+						/>
+						<DashboardCard
+							name="Users"
+							percent="24"
+							amount="1,034"
+							icon={usersIcon}
+							profit={true}
+						/>
+					</div>
+				</div>
+				<div className="dashboard_apps-container">
+					<div></div>
+				</div>
 			</div>
 		</div>
 	);

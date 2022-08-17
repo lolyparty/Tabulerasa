@@ -1,0 +1,44 @@
+.card_container {
+	padding: 20px;
+	border-radius: 10px;
+}
+.card_container:nth-child(1) {
+	background: #fffae6;
+	border: 0.5px solid #ffefb3;
+}
+
+.card_container:nth-child(2) {
+	background: #edeff3;
+	border: 0.5px solid #dbe0e7;
+}
+
+.card_name-container,
+.card_icon_number-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card_name-container {
+	font-size: 13px;
+	margin-bottom: 15px;
+}
+
+.profit,
+.loss {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.profit {
+	color: #00875a;
+}
+
+.loss {
+	color: #e0775d;
+}
+
+.card_icon_number-container p {
+	font-size: 19px;
+	font-weight: 500;
+	padding-top: 5px;
+}

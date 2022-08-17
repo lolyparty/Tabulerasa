@@ -59,7 +59,7 @@ const DashboardGraph = () => {
 						datasets: [
 							{
 								label: '',
-								data: [0, 30, 50, 43, 40, 55, 67, 68, 73, 74],
+								data: [0, 30, 50, 43, 40, 55, 67.05, 68, 73, 74],
 								fill: 'start',
 								fillColor: '#fff',
 								borderColor: ['#FFCA00'],
@@ -70,7 +70,7 @@ const DashboardGraph = () => {
 									gradient.addColorStop(1, 'rgba(255, 244, 204, 0)');
 									return gradient;
 								},
-								tension: 0.3,
+								tension: 0.35,
 								borderWidth: 2,
 								pointBackgroundColor: '#FFCA00',
 								pointRadius: [0, 2, 0, 0, 2, 0, 0, 2, 0, 2],

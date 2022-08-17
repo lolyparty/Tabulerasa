@@ -62,7 +62,11 @@ const DashboardGraph = () => {
 								data: [0, 20, 50, 43, 40, 55, 67, 68, 73, 74],
 								fill: true,
 								borderColor: ['#FFCA00'],
-								backgroundColor: ['#FFF4CC', '#FFF4CC'],
+								backgroundColor: [
+									'rgba(255, 244, 204, 1)',
+									'rgba(255, 244, 204, 0)',
+									'#fff',
+								],
 								tension: 0.35,
 								borderWidth: 2,
 								pointBackgroundColor: '#FFCA00',
@@ -77,6 +81,9 @@ const DashboardGraph = () => {
 						},
 						scales: {
 							xAxes: {
+								ticks: {
+									color: '#919090',
+								},
 								grid: {
 									drawBorder: false,
 									display: false,
@@ -84,6 +91,9 @@ const DashboardGraph = () => {
 							},
 
 							yAxes: {
+								ticks: {
+									color: '#919090',
+								},
 								grid: {
 									drawBorder: false,
 								},

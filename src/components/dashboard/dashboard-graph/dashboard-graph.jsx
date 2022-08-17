@@ -67,7 +67,7 @@ const DashboardGraph = () => {
 									const ctx = context.chart.ctx;
 									const gradient = ctx.createLinearGradient(0, 0, 0, 500);
 									gradient.addColorStop(0, 'rgba(255, 244, 204, 1)');
-									gradient.addColorStop(1, 'rgba(255, 244, 204, 0)');
+									gradient.addColorStop(0.5, 'rgba(255, 244, 204, 0)');
 									return gradient;
 								},
 								tension: 0.35,

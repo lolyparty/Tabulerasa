@@ -54,6 +54,11 @@ const DashboardGraph = () => {
 						'Nov',
 						'Dec',
 					],
+					plugins: {
+						legend: {
+							display: false,
+						},
+					},
 					datasets: [
 						{
 							label: '',
@@ -64,27 +69,21 @@ const DashboardGraph = () => {
 							tension: 0.5,
 						},
 					],
-					options: {
-						legend: {
-							display: false,
+				}}
+				options={{
+					scales: {
+						xAxes: {
+							grid: {
+								drawBorder: false,
+								display: false,
+							},
 						},
-						scales: {
-							xAxes: [
-								{
-									gridLines: {
-										display: false,
-										drawBorder: false,
-									},
-								},
-							],
-							yAxes: [
-								{
-									gridLines: {
-										display: false,
-										drawBorder: false,
-									},
-								},
-							],
+
+						yAxes: {
+							grid: {
+								drawBorder: false,
+								display: false,
+							},
 						},
 					},
 				}}

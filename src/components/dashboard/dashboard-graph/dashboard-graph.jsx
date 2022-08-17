@@ -70,14 +70,10 @@ const DashboardGraph = () => {
 									gradient.addColorStop(1, 'rgba(255, 244, 204, 0)');
 									return gradient;
 								},
-								// backgroundColor: [
-								// 	'rgba(255, 244, 204, 1)',
-								// 	'rgba(255, 244, 204, 0)',
-								// 	'#fff',
-								// ],
-								tension: 0.25,
+								tension: 0.3,
 								borderWidth: 2,
 								pointBackgroundColor: '#FFCA00',
+								pointRadius: [0, 2, 0, 0, 2, 0, 0, 2, 0, 2],
 							},
 						],
 					}}

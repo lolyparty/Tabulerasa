@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import dateIcon from '../../assets/Icons/calendar-blank.svg';
 import DashboardCard from './dashboard-cards/dashboard-card';
+import DashboardAppCard from './dashboard-apps/dashboard-apps-card';
 import './dashboard.css';
 import companiesIcon from '../../assets/Icons/buildings.svg';
 import usersIcon from '../../assets/Icons/users-three.svg';
@@ -76,7 +77,33 @@ const Dashboard = () => {
 					</div>
 				</div>
 				<div className="dashboard_apps-container">
-					<div></div>
+					<div className="dashboard_apps-name">
+						<p>APPS</p>
+					</div>
+					<DashboardAppCard
+						name="CU"
+						comingSoon={false}
+						companiesNumber="4"
+						companiesProfit={false}
+						companiesPercent="8"
+						usersNumber="23"
+						usersProfit={true}
+						userspercent="4"
+					/>
+					<DashboardAppCard
+						name="GP"
+						comingSoon={false}
+						companiesNumber="3"
+						companiesProfit={false}
+						companiesPercent="8"
+						usersNumber="23"
+						usersProfit={true}
+						userspercent="4"
+					/>
+					<DashboardAppCard name="IR" comingSoon={true} />
+					<DashboardAppCard name="ES" comingSoon={true} />
+					<DashboardAppCard name="DP" comingSoon={true} />
+					<DashboardAppCard name="CD" comingSoon={true} />
 				</div>
 			</div>
 		</div>

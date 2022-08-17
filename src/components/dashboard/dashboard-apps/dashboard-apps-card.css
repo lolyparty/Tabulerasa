@@ -1,0 +1,64 @@
+.app-container {
+	padding: 15px;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.app-container.coming-soon {
+	background: #fbfbfb;
+}
+
+.coming_soon-name {
+	color: #7a797a;
+	font-weight: 400;
+	font-size: 14px;
+	margin: 15px 0px 5px 0px;
+}
+
+.app-name {
+	font-size: 14.5px;
+	font-weight: 500;
+	margin: 5px 0px 10px 0px;
+}
+
+.app_stats-container {
+	margin: 15px 0px 10px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.app-company_stat,
+.app-users_stat {
+	display: flex;
+	gap: 10px;
+}
+
+.app_users-number,
+.app_company-number {
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.app_company-percentage,
+.app_users-percentage {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+.app_company-percentage img,
+.app_users-percentage img {
+	height: 9px;
+	width: 9px;
+	align-self: center;
+}
+
+.app_company-percentage-number,
+.app_users-percentage-number {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.app-users_stat {
+	margin-right: 30px;
+}

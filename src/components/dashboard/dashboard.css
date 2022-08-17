@@ -49,11 +49,27 @@
 }
 
 .company_graph-container {
-	padding: 25px 20px;
+	padding: 45px 35px 25px 20px;
 }
 
 .company_users-cards-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 30px;
+	gap: 25px;
+}
+
+.dashboard_apps-container {
+	border-left: 1px solid #ededed;
+}
+
+.dashboard_apps-name {
+	padding: 10px 15px;
+	background: #fbfbfb;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.dashboard_apps-name p {
+	font-size: 13px;
+	font-weight: 500;
+	color: #646364;
 }

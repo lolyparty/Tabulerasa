@@ -63,7 +63,9 @@ const DashboardGraph = () => {
 								fill: true,
 								borderColor: ['#FFCA00'],
 								backgroundColor: ['#FFF4CC', '#FFF4CC'],
-								tension: 0.5,
+								tension: 0.35,
+								borderWidth: 2,
+								pointBackgroundColor: '#FFCA00',
 							},
 						],
 					}}

@@ -1,0 +1,44 @@
+.dashboard_graph-container {
+	padding: 15px 20px;
+	margin-top: 20px;
+	border: 1.5px solid #f2f2f2;
+	border-radius: 8px;
+}
+
+.dashboard_graph-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.graph-title {
+	color: #4e4d4d;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.company_users-btn-container {
+	padding: 5px;
+	border-radius: 8px;
+	background: #f2f2f2;
+}
+
+.graph_tab-btn {
+	border: none;
+	cursor: pointer;
+	color: #646364;
+	font-size: 12px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-weight: 400;
+}
+
+.graph_tab-btn.companies-graph {
+	background: #fff;
+	font-weight: 500;
+}
+
+.graph_tab-btn.users-graph {
+	background: #fff;
+	font-weight: 500;
+}

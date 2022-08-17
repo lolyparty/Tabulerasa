@@ -5,6 +5,7 @@ import DashboardAppCard from './dashboard-apps/dashboard-apps-card';
 import './dashboard.css';
 import companiesIcon from '../../assets/Icons/buildings.svg';
 import usersIcon from '../../assets/Icons/users-three.svg';
+import DashboardGraph from './dashboard-graph/dashboard-graph';
 
 const Dashboard = () => {
 	const [activeTab, setActiveTab] = useState('overview');
@@ -75,6 +76,7 @@ const Dashboard = () => {
 							profit={true}
 						/>
 					</div>
+					<DashboardGraph />
 				</div>
 				<div className="dashboard_apps-container">
 					<div className="dashboard_apps-name">

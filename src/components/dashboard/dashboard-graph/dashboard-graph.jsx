@@ -37,53 +37,59 @@ const DashboardGraph = () => {
 					</button>
 				</div>
 			</div>
-			<Line
-				datasetIdKey="0"
-				data={{
-					labels: [
-						'Jan',
-						'feb',
-						'Mar',
-						'Apr',
-						'May',
-						'Jun',
-						'Jul',
-						'Aug',
-						'Sep',
-						'Oct',
-						'Nov',
-						'Dec',
-					],
+			<div className="chart-container">
+				<Line
+					datasetIdKey="0"
+					data={{
+						labels: [
+							'Jan',
+							'feb',
+							'Mar',
+							'Apr',
+							'May',
+							'Jun',
+							'Jul',
+							'Aug',
+							'Sep',
+							'Oct',
+							'Nov',
+							'Dec',
+						],
 
-					datasets: [
-						{
-							label: '',
-							data: [0, 20, 50, 43, 40, 55, 67, 68, 73, 74],
-							fill: true,
-							borderColor: ['#FFCA00'],
-							backgroundColor: ['#FFF4CC', '#FFF4CC'],
-							tension: 0.5,
-						},
-					],
-				}}
-				options={{
-					scales: {
-						xAxes: {
-							grid: {
-								drawBorder: false,
+						datasets: [
+							{
+								label: '',
+								data: [0, 20, 50, 43, 40, 55, 67, 68, 73, 74],
+								fill: true,
+								borderColor: ['#FFCA00'],
+								backgroundColor: ['#FFF4CC', '#FFF4CC'],
+								tension: 0.5,
+							},
+						],
+					}}
+					options={{
+						plugins: {
+							legend: {
 								display: false,
 							},
 						},
-					},
-				}}
-				plugins={{
-					plugins: {
-						legend: {
-							display: false,
+						scales: {
+							xAxes: {
+								grid: {
+									drawBorder: false,
+									display: false,
+								},
+							},
+
+							yAxes: {
+								grid: {
+									drawBorder: false,
+								},
+							},
 						},
-					},
-				}}
-			/>
+					}}
+				/>
+			</div>
 		</div>
 	);
 };

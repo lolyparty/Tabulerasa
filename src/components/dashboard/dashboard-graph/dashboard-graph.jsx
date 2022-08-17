@@ -65,15 +65,15 @@ const DashboardGraph = () => {
 								borderColor: ['#FFCA00'],
 								backgroundColor: (context) => {
 									const ctx = context.chart.ctx;
-									const gradient = ctx.createLinearGradient(0, 0, 0, 500);
+									const gradient = ctx.createLinearGradient(0, 0, 0, 550);
 									gradient.addColorStop(0, 'rgba(255, 244, 204, 1)');
 									gradient.addColorStop(0.5, 'rgba(255, 244, 204, 0)');
 									return gradient;
 								},
 								tension: 0.35,
-								borderWidth: 2,
+								borderWidth: 1.5,
 								pointBackgroundColor: '#FFCA00',
-								pointRadius: [0, 2, 0, 0, 2, 0, 0, 2, 0, 2],
+								pointRadius: [0, 3, 0, 0, 3, 0, 0, 3, 0, 3],
 							},
 						],
 					}}
